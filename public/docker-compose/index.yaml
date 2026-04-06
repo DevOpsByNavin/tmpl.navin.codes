@@ -1,0 +1,73 @@
+services:
+  app:
+    image: ${IMAGE}
+    container_name: my_app
+    restart: unless-stopped
+
+    env_file:
+      - .env
+
+    environment:
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+
+    ports:
+      - "${APP_PORT:-8080}:80"
+
+    volumes:
+      - type: bind
+        source: ./data
+        target: /etc/data
+        read_only: true
+      - logs:/var/log/app
+
+    networks:
+      - custom_network
+
+    depends_on:
+      db:
+        condition: service_healthy
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+    mem_limit: 256m
+    mem_reservation: 64m
+    cpus: "0.5"
+
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-app}
+      POSTGRES_USER: ${POSTGRES_USER:-app}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - custom_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+networks:
+  custom_network:
+    name: custom_name
+    driver: bridge
+    external: true
+
+volumes:
+  logs:
+  db_data:
