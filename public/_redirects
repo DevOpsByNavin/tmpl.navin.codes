@@ -1,1 +1,8 @@
 /docker-compose /docker-compose/index.yaml 200
+
+/lazydocker https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh 302
+
+/authelia https://raw.githubusercontent.com/authelia/authelia/refs/heads/master/examples/compose/local/authelia/configuration.yml 302
+/authelia/configuration https://raw.githubusercontent.com/authelia/authelia/refs/heads/master/examples/compose/local/authelia/configuration.yml 302
+
+/authelia/users_database https://raw.githubusercontent.com/authelia/authelia/refs/heads/master/examples/compose/local/authelia/users_database.yml 302
