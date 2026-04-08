@@ -1,4 +1,6 @@
 /docker-compose /docker-compose/index.yaml 200
+/docker-compose/dockge https://raw.githubusercontent.com/louislam/dockge/refs/heads/master/compose.yaml 302
+/docker-compose/uptime-kuma https://raw.githubusercontent.com/louislam/uptime-kuma/refs/heads/master/compose.yaml 302
 
 /install/lazydocker https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh 302
 /install/lazygit /install/lazygit/install.sh 200
