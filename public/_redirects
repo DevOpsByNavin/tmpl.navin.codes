@@ -6,5 +6,6 @@
 
 /authelia https://raw.githubusercontent.com/authelia/authelia/refs/heads/master/examples/compose/local/authelia/configuration.yml 302
 /authelia/configuration https://raw.githubusercontent.com/authelia/authelia/refs/heads/master/examples/compose/local/authelia/configuration.yml 302
-
 /authelia/users_database https://raw.githubusercontent.com/authelia/authelia/refs/heads/master/examples/compose/local/authelia/users_database.yml 302
+
+/vault https://raw.githubusercontent.com/hashicorp/vault/refs/heads/main/.release/linux/package/etc/vault.d/vault.hcl 302
