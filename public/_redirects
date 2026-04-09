@@ -1,6 +1,7 @@
 /docker-compose /docker-compose/index.yaml 200
 /docker-compose/dockge https://raw.githubusercontent.com/louislam/dockge/refs/heads/master/compose.yaml 302
 /docker-compose/uptime-kuma https://raw.githubusercontent.com/louislam/uptime-kuma/refs/heads/master/compose.yaml 302
+/docker-compose/portainer https://downloads.portainer.io/ce-sts/portainer-compose.yaml 302
 
 /install/lazydocker https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh 302
 /install/lazygit /install/lazygit/install.sh 200
@@ -11,3 +12,4 @@
 /authelia/users_database https://raw.githubusercontent.com/authelia/authelia/refs/heads/master/examples/compose/local/authelia/users_database.yml 302
 
 /vault https://raw.githubusercontent.com/hashicorp/vault/refs/heads/main/.release/linux/package/etc/vault.d/vault.hcl 302
+
