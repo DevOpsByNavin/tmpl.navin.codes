@@ -2,6 +2,8 @@
 /docker-compose/dockge https://raw.githubusercontent.com/louislam/dockge/refs/heads/master/compose.yaml 302
 /docker-compose/uptime-kuma https://raw.githubusercontent.com/louislam/uptime-kuma/refs/heads/master/compose.yaml 302
 /docker-compose/portainer https://downloads.portainer.io/ce-sts/portainer-compose.yaml 302
+/docker-compose/n8n https://raw.githubusercontent.com/n8n-io/n8n-hosting/refs/heads/main/docker-compose/withPostgres/docker-compose.yml 302
+/docker-compose/sonarqube https://raw.githubusercontent.com/SonarSource/docker-sonarqube/refs/heads/master/example-compose-files/sq-with-postgres/docker-compose.yml 302
 
 /install/lazydocker https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh 302
 /install/lazygit /install/lazygit/install.sh 200
