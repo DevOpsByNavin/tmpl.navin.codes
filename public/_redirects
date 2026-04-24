@@ -8,6 +8,7 @@
 /install/lazydocker https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh 302
 /install/lazygit /install/lazygit/install.sh 200
 /install/yazi /install/yazi/install.sh 200
+/install/homebrew https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh 302
 
 /authelia https://raw.githubusercontent.com/authelia/authelia/refs/heads/master/examples/compose/local/authelia/configuration.yml 302
 /authelia/configuration https://raw.githubusercontent.com/authelia/authelia/refs/heads/master/examples/compose/local/authelia/configuration.yml 302
